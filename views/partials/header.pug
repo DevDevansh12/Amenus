@@ -1,0 +1,18 @@
+header.s-header
+  .row.s-header__inner.width-sixteen-col
+    .s-header__block.about-nav-left
+      .s-header__logo
+        a.logo(href="/")
+          img(src="/images/amenus_logo.png" alt="Amenus Logo")
+      button.mobile-menu-toggle#mobileMenuToggle(aria-label="Toggle menu")
+        span
+        span
+        span
+      ul.about-nav-links#aboutNavLinks
+        li
+          a(href="/about") About
+        li
+          a(href="/site-copyright") Site & Copyright
+    nav.s-header__nav
+      .s-header__contact
+        button.btn.btn--primary.s-header__contact-btn#openContactModal(type="button") Connect With Me!

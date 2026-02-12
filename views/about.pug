@@ -1,0 +1,101 @@
+extends layout
+
+block append head
+  - var title = "About - Amenus"
+  - var bodyClass = "page-about"
+
+block content
+  #page.s-pagewrap(style="background: var(--color-3);")
+    section#content.s-content(style="background: var(--color-3);")
+      section.s-pageheader.pageheader(style="background: var(--color-3);")
+        .row
+          .column.xl-8.lg-8
+            h1.page-title
+              span.page-title__small-type.text-pretitle
+      
+      section.s-pagecontent.pagecontent
+        .row.pageintro
+          .column.xl-6.lg-12
+            h2#about-intro-title.text-display-title.typewriter(data-animate-letters) About Amenus
+          .column.xl-6.lg-12.u-flexitem-x-right
+            p#about-intro-lead.lead.word-reveal(data-animate-words)
+              | Amenus is an independent storytelling platform dedicated to intimate fiction and emotionally
+              | resonant narratives. We focus on stories that explore connection, longing, vulnerability,
+              | and the quiet tension between people, the moments that shape who we are.
+        
+        .row.width-narrower.pagemain
+          .column.xl-12
+            h2 What We Create
+            p We specialize in:
+            
+            ul.specialize-list
+              li Emotional and literary fiction
+              li Character-driven storytelling
+              li Stories about love, longing, and resilience
+              li Intimate, reflective narratives
+            
+            p
+              | Every story is crafted to resonate on a human level, making each book feel personal and
+              | unforgettable.
+            
+            h2.u-add-bottom Why Amenus Exists
+            
+            .grid-list-items.list-items
+              .grid-list-items__item.list-items__item.u-remove-bottom
+                .list-items__item-header
+                  h6.list-items__item-small-title Intimate Storytelling Platform
+                p
+                  | Amenus is a literary space dedicated to emotionally rich fiction that explores
+                  | connection, vulnerability, and quiet desire through carefully crafted stories.
+              
+              .grid-list-items__item.list-items__item.u-remove-bottom
+                .list-items__item-header
+                  h6.list-items__item-small-title Emotion-Driven Fiction
+                p
+                  | We publish intimate novels and reflective narratives focused on love, longing, and
+                  | human experience stories that feel personal, honest, and deeply moving.
+              
+              .grid-list-items__item.list-items__item.u-remove-bottom
+                .list-items__item-header
+                  h6.list-items__item-small-title Quiet, Elegant, Meaningful
+                p
+                  | Every Amenus story is designed to be subtle yet powerful, blending beautiful
+                  | language with emotional depth and timeless storytelling.
+              
+              .grid-list-items__item.list-items__item.u-remove-bottom
+                .list-items__item-header
+                  h6.list-items__item-small-title Readers Who Feel Deeply
+                p
+                  | Amenus is for readers who appreciate slow-burn fiction, emotional layers, and
+                  | stories that linger long after the final page.
+            
+            h2 Why Work With Me
+            p
+              | You gain a partner who combines deep technical acumen with sharp market strategy. I
+              | specialize in de-risking innovation through a proven Product MVP approach, ensuring we build
+              | what truly matters. With hands-on experience from coding to C-suite leadership,
+              | I bridge the gap between vision and execution, delivering scalable, high-performance
+              | solutions.
+            
+            p
+              | I independently manage complex international accounts, ensuring clear communication,
+              | strategic alignment, and measurable results. My leadership philosophy is built on
+              | mentorship, transparency, and fostering teams that solve technological challenges with
+              | a constructive, collaborative mindset.
+            
+            h2 A Few More Words About Myself
+            p
+              | Amenus is a storyteller drawn to the emotional spaces where desire, vulnerability, and human
+              | connection intersect. Through intimate fiction, Amenus explores how honesty reshapes
+              | relationships and how unspoken longings influence the way people love, trust, and grow
+              | together.
+              | When not writing, Amenus studies human behaviour, relationship dynamics, and the art of
+              | narrative tension, always seeking new ways to translate emotional complexity into compelling
+              | fiction.
+      
+      section#cta.s-cta
+        .row.row-x-center.text-center
+          .column.xl-8.lg-12
+            .s-cta__content
+              h2.text-display-title Get started with a consultation today.
+              a.btn.btn--primary(href="mailto:hello@amenus.online") Let's Work Together

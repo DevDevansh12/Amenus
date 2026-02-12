@@ -1,0 +1,189 @@
+extends layout
+
+block append head
+  - var title = "Site & Copyright | Amenus"
+  - var bodyClass = "policy-page"
+  style.
+    .policy-page {
+      background: var(--color-3);
+      padding-bottom: 6rem;
+    }
+    .policy-hero {
+      padding: 8rem 0 3rem;
+      text-align: center;
+    }
+    .policy-hero .eyebrow {
+      display: inline-block;
+      font-size: 1.4rem;
+      letter-spacing: 0.24rem;
+      text-transform: uppercase;
+      color: var(--color-1);
+      margin-bottom: 1rem;
+    }
+    .policy-hero h1 {
+      font-family: var(--font-2);
+      font-size: clamp(3.2rem, 5vw, 5.6rem);
+      color: var(--color-2-dark);
+      margin-bottom: 1.2rem;
+    }
+    .policy-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--color-text);
+      font-size: 1.7rem;
+      line-height: 1.8;
+    }
+    .policy-card {
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+      padding: clamp(2.4rem, 4vw, 4.2rem);
+      max-width: 920px;
+      margin: -70px auto;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .policy-section {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+    .policy-section h2 {
+      font-family: var(--font-2);
+      color: var(--color-2-dark);
+      font-size: clamp(2.2rem, 2.6vw, 3rem);
+      margin-bottom: 0.8rem;
+    }
+    .policy-section p {
+      font-size: 1.6rem;
+      line-height: 1.75;
+      color: var(--color-text);
+    }
+    .policy-section li {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+    }
+    .policy-meta {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      color: var(--color-text-light);
+    }
+    .policy-highlight {
+      color: var(--color-1-dark);
+      font-weight: 600;
+    }
+    @media (max-width: 700px) {
+      .policy-hero {
+        padding-top: 6rem;
+      }
+      .policy-card {
+        margin: 0 6vw;
+      }
+    }
+
+block content
+  section#content.s-content(style="background: var(--color-3);")
+    section.policy-hero
+      span.eyebrow Legal
+      h1 Privacy Policy
+      p
+        | A clear and respectful overview of how Amenus collects, uses, and protects your information while you
+        | browse our stories and offerings.
+    
+    section.s-pagecontent.pagecontent
+      .row
+        .column.xl-12
+          .policy-card
+            .policy-section
+              h2 Information We Collect
+              p
+                | Amenus collects limited personal information only when you voluntarily provide it, such
+                | as when you contact us through our forms or email. This may include your name, email
+                | address, and any message you send.
+                | We also collect non-personal data such as browser type, device information, and pages
+                | visited to help us improve site performance and user experience.
+            
+            .policy-section
+              h2 How We Use Your Information
+              p.sub
+                li Respond to inquiries
+                li Improve our website and services
+                li Communicate updates when requested
+                li Maintain the security and functionality of our platform
+            
+            .policy-section
+              h2 Cookies & Tracking
+              p
+                | Amenus uses cookies to understand how visitors interact with the site. Cookies help us
+                | analyze traffic, improve performance, and provide a smoother browsing experience. 
+                br
+                | You can manage or disable cookies at any time through your browser settings.
+            
+            .policy-section
+              h2 Data Protection
+              p
+                | We take reasonable steps to protect your data from unauthorized access, loss, or misuse.
+                | While no system is completely secure, we follow best practices to keep your information
+                | safe.
+            
+            .policy-section
+              h2 Third-Party Services
+              p
+                | We may use trusted third-party services such as analytics tools or hosting providers.
+                | These services follow their own privacy policies and data handling practices.
+            
+            .policy-section
+              h2 Your Rights
+              p
+                | You may request access to, correction of, or deletion of your personal information at
+                | any time by contacting us.
+            
+            .policy-section
+              h2 Site &amp; Copyright
+              p
+                | Amenus is an original literary platform dedicated to intimate storytelling.
+                | All original text, story content, and written materials on this website are protected by
+                | copyright law and may not be copied, republished, or redistributed without written
+                | permission.
+              
+              h6 Design Credits
+              p
+                | Creative direction, visual layout, and user experience design are created specifically
+                | for the Amenus brand.
+                | Any reuse or licensing of design elements must be approved in writing.
+              
+              h6 Photo Credits
+              p
+                | Cover art and promotional imagery belong to their respective creators and publishers.
+                | All rights remain with their original owners unless otherwise stated.
+              
+              h6 Copyright Information
+              p
+                | All book excerpts, story content, and original text published on Amenus are copyrighted
+                | by their respective authors and publishers.
+                | Unauthorized use, reproduction, or distribution is strictly prohibited.
+            
+            .policy-section
+              h2 Terms &amp; Conditions
+              p By using this website, you agree to the following:
+              
+              ul
+                li Amenus content is for personal, non-commercial use only
+                li You may not copy, distribute, or use Amenus content to train AI or create derivative works without written permission
+                li You may not attempt to disrupt site functionality, access restricted areas, or misuse the platform
+                li Amenus is not responsible for temporary outages or third-party services linked from this website
+              
+              p
+                | External links are provided for convenience and are governed by their own privacy and
+                | usage policies.
+            
+            .policy-section
+              h2 Questions
+              p
+                | For questions about our privacy practices, copyright, or site usage, contact
+                | 
+                span.policy-highlight
+                  a(href="mailto:hello@amenus.online" style="color: darkorange;") hello@amenus.online
+                | .
+              .policy-meta Last updated: February 2026

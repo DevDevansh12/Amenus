@@ -1,0 +1,32 @@
+#contactModal.contact-modal
+  .contact-modal__overlay
+  link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet")
+  
+  .contact-modal__box
+    button.contact-modal__close(aria-label="Close") &times;
+    
+    .contact-modal__content
+      .contact-modal__form
+        h2 Contact us
+        
+        form#contactForm
+          label Name
+          input(type="text" name="name" placeholder="Your name" required)
+          
+          label Email
+          input(type="email" name="email" placeholder="Your email" required)
+          
+          label Message
+          textarea(name="message" rows="5" placeholder="Type your message..." required)
+          
+          button.btn.btn--primary(type="submit") Send Message
+      
+      .contact-modal__info
+        .contact-modal__logo
+          img(src="/images/amenus_logo.png" alt="Logo")
+        
+        ul.contact-modal__details
+          li
+            span 📧
+            |  hello@amenus.online
+          li

@@ -1,0 +1,89 @@
+extends layout
+
+block content
+  section#content.s-content(style="background-color: var(--color-2-dark); background: var(--color-3);")
+    section#intro.s-intro
+      .row.s-intro__content.width-sixteen-col
+        .column.lg-12.s-intro__content-inner.grid-block
+          .s-intro__content-text
+            .s-intro__content-pretitle.text-pretitle Amenus - Intimate Storytelling Through Emotional Fiction
+            h2.s-intro__content-title
+              | A space dedicated to intimate storytelling exploring 
+              br
+              | connection, longing, 
+              br
+              |  and the quiet
+              br
+              |  tension between 
+              br
+              |  
+              i restraint and release.
+          
+          .s-intro__content-media
+            .s-intro__content-media-inner
+              .lines
+                span
+          
+          .s-intro__scroll-down
+            a.smoothscroll(href="#books")
+              .scroll-icon
+                svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#97b34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round")
+                  polyline(points="7 13 12 18 17 13")
+                  line(x1="12" y1="18" x2="12" y2="6")
+              span Scroll to explore our featured fiction books
+    
+    section#books.s-pageheader.pageheader.pageheader--compact(style="background-color: black;")
+      .row
+        .column.xl-12.text-
+          h1.page-title
+            span.page-title__small-type.text-pretitle Books
+            |  Explore Our Featured Fiction
+    
+    .row
+      .column.xl-12.grid-block
+        .grid-full.grid-list-items.books-grid
+          .grid-list-items__item.blog-card.reveal-book
+            img.reveal-cover(src="/images/books/teach-me-how.jpg" alt="Teach Me How to Lie With My Eyes" style="max-width:200px; display:block; margin:1rem 0;")
+            
+            .blog-card__header.reveal-text
+              .blog-card__cat-links
+                a(href="#")
+              h3.blog-card__title Teach Me How to Lie With My Eyes
+            
+            .blog-card__text
+              p.reveal-text
+                | A tender and emotionally rich novel about love, vulnerability, and the quiet truths we
+                | hide. This story lives in the fragile space between what is felt and what is shown,
+                | where silence and glances often speak louder than words.
+                | Perfect for readers who love character-driven fiction and intimate storytelling.
+              br
+              a.btn.btn--primary.btn--small.reveal-btn(href="https://books2read.com/u/mgd6vq" target="_blank") Buy Now
+          
+          .grid-list-items__item.blog-card.reveal-book
+            img.reveal-cover(src="/images/books/in-silence-she-comes.jpg" alt="In Silence She Comes" style="max-width:200px; display:block; margin:1rem 0;")
+            
+            .blog-card__header.reveal-text
+              .blog-card__cat-links
+                a(href="#")
+              h3.blog-card__title In Silence She Comes
+            
+            .blog-card__text
+              p.reveal-text
+                | A quiet yet powerful meditation on longing, resilience, and inner strength. This story
+                | moves through still moments and unspoken emotions, following a woman whose presence is
+                | felt deeply, not through sound, but through calm and deliberate silence.
+                br
+                | An ideal read for lovers of slow-burn, emotionally layered fiction.
+              
+              a.btn.btn--primary.btn--small.reveal-btn(href="https://books2read.com/u/3yyJOn" target="_blank") Buy Now
+  
+  section#cta.s-cta
+    .row.row-x-center.text-center
+      .column.xl-8.lg-12
+        .s-cta__content
+          h2.text-display-title Enter a world of intimate storytelling.
+          p.lead
+            | A curated collection of literary fiction focused on connection, tension, and human
+            | vulnerability. Every Amenus story unfolds with care, inviting readers to experience emotion,
+            | atmosphere, and passion through carefully chosen words and beautifully restrained storytelling.
+          a.btn.btn--primary(href="mailto:hello@amenus.online") Let's Work Together
